@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView android:id="@+id/tv_contact_name"
+        android:layout_toLeftOf="@+id/cb_selection"
+        android:layout_toStartOf="@+id/cb_selection"
+        android:paddingLeft="@dimen/listview_item_padding"
+        android:paddingRight="@dimen/listview_item_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:maxLines="1"
+        android:ellipsize="marquee"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView android:id="@+id/tv_contact_no"
+        android:layout_toLeftOf="@+id/cb_selection"
+        android:layout_toStartOf="@+id/cb_selection"
+        android:layout_below="@+id/tv_contact_name"
+        android:paddingLeft="@dimen/listview_item_padding"
+        android:paddingRight="@dimen/listview_item_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:fontFamily="sans-serif-light"
+        android:maxLines="1"
+        android:ellipsize="marquee"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+    <CheckBox
+        android:layout_margin="@dimen/listview_item_padding"
+        android:id="@+id/cb_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
